@@ -58,6 +58,12 @@
   align-items: center;
 }
 
+.project-image > img {
+  border-radius: 200px;
+  background-color: black;
+}
+
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

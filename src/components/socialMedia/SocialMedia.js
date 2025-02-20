@@ -1,6 +1,7 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import fiverLogo from "../../assets/images/fiverr.png"
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -125,6 +126,19 @@ export default function socialMedia() {
         >
           <i className="fab fa-kaggle"></i>
           <span></span>
+        </a>
+      ) : null}
+     
+      {socialMediaLinks.fiverr ? (
+        <a
+          href={socialMediaLinks.fiverr}
+          // className="icon-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+    
+          <img src={fiverLogo} alt="fiver" width="40px" style={{borderRadius: 50, marginBottom: -14, marginLeft: 6 }} />
+        
         </a>
       ) : null}
     </div>
